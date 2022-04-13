@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ware_house
+    driver-class-name: org.postgresql.Driver
+    password: rot1234
+    username: postgres
+  data:
+    rest:
+      basePath: /api
+      default-page-size: '10'
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  error:
+    include-message: always
+  port: 80
